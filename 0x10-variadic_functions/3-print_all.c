@@ -33,7 +33,6 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					str = va_arg(list, char *);
-
 					if (!str)
 						str = "(nil)";
 					printf("%s%s", sep, str);
@@ -46,6 +45,7 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
+
 	printf("\n");
 	va_end(list);
 }
